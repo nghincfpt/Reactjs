@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root">   </div>
+
+    <ul data-class="hotels">
+        <li data-location="Integer pretium" data-id="78" data-class="hotel-item">
+            Curabitur
+        </li>
+        <li data-location="Sed pharetra" data-id="122" data-class="hotel-item">
+            Donec aliquet
+        </li>
+    </ul>
+
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        const myClasses = (
+            <a href="https://fsoft-academy.edu.vn/">
+                <h1>
+                    Welcome!
+                </h1>
+            </a>
+        );
+
+        // ReactDOM.render(myClasses, document.getElementById('root'));
+
+        const example = <h1 id="example">JSX Attributes</h1>;
+
+        // When rendered, this JSX expression...
+        const heading = <h1 className="example">Hello ReactJS - JSX</h1>;
+        
+        // ...will be rendered as this HTML
+        <h1 class="example">Hello ReactJS - JSX</h1>
+
+        const element = React.createElement(
+            'h1',
+            {className: 'example'},
+            'Hello, React JS!'
+        );
+
+       
+
+        ReactDOM.render(element, document.getElementById('root'));
+
+
+    </script>
+</body>
+</html>

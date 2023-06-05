@@ -1,0 +1,14 @@
+body{
+  background-color: gray;
+  margin: 0 auto;
+}
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.card{
+  background-color: white;
+  border-radius: 3px;
+  padding: 0.3em 0.5em;
+  margin-top: 15px;
+}
